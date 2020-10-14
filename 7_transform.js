@@ -1,12 +1,9 @@
 function transform(arr) {
-   var funcArr = []
-   for (let item = 0; item < arr.length; item++) {
-      var newFunc = function() { 
-        return arr[item]
+   return arr.map(function (srcItem) {
+      return function () {
+         return srcItem
       }
-      funcArr.push(newFunc)
-   }
-   return funcArr
+   })
 }
 
 var baseArray = [10, 20, 30, 40, 50]
