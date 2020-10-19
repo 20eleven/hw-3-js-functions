@@ -1,6 +1,6 @@
 function transform(arr) {
-   return arr.map(function (srcItem) {
-      return function () {
+   return arr.map(function(srcItem) {
+      return function() {
          return srcItem
       }
    })

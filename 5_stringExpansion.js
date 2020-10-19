@@ -13,7 +13,8 @@ function stringExpansion(str) {
       if (typeof item === 'number') {
          num = item
       }  
-      newStr.push(sym.repeat(num))   
+      var myRepeat = new Array(num + 1).join(sym)
+      newStr.push(myRepeat)  
       if (!num) {
          newStr.push(sym)
       }
