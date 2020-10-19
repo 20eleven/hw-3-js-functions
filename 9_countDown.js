@@ -1,6 +1,6 @@
 function countDown(num) {  
    var current = num
-   var timer = setInterval(function func() {
+   var timer = setInterval(function() {
       console.log(current)
       if (current == 0) {
          clearInterval(timer)
